@@ -11,7 +11,7 @@ function App() {
           <br />
           {`api: ${process.env.REACT_APP_API_URL}`}
           <br />
-          {`api: ${process.env.REACT_APP_API_URL}`}
+          {`demo: ${process.env.REACT_APP_DEMO}`}
         </p>
         <a
           className="App-link"
