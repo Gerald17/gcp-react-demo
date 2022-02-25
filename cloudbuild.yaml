@@ -4,7 +4,7 @@ steps:
   env: 
   - REACT_APP_API_URL=${_REACT_APP_API_URL}
   - REACT_APP_DEMO_TWO=${_REACT_APP_DEMO_TWO}
-  args: ['build', '-t', 'gcr.io/$PROJECT_ID/gcp-react-demo:$SHORT_SHA', '--build-arg=REACT_APP_API_URL=$_REACT_APP_API_URL', '.' ]
+  args: ['build', '-t', 'gcr.io/$PROJECT_ID/gcp-react-demo:$SHORT_SHA',  '--build-arg=REACT_APP_DEMO=$_REACT_APP_DEMO', '.' ]
 - name: 'gcr.io/cloud-builders/docker'
   env: 
   - REACT_APP_API_URL=${_REACT_APP_API_URL}
