@@ -7,8 +7,8 @@ COPY package.json .
 RUN yarn install
 # Copy app files
 COPY . .
-ARG REACT_APP_API_URL
-ENV REACT_APP_API_URL=${REACT_APP_API_URL}
+ARG REACT_APP_API_URL=$_REACT_APP_API_URL
+ENV REACT_APP_API_URL=$REACT_APP_API_URL
 # Build the app 
 RUN yarn build
 
