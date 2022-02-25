@@ -14,6 +14,8 @@ function App() {
           {`demo: ${process.env.REACT_APP_DEMO}`}
           <br />
           {`demo two: ${process.env.REACT_APP_DEMO_TWO}`}
+          <br />
+          {`demo three: ${process.env.REACT_APP_DEMO_THREE}`}
         </p>
         <a
           className="App-link"
