@@ -12,6 +12,8 @@ function App() {
           {`api: ${process.env.REACT_APP_API_URL}`}
           <br />
           {`demo: ${process.env.REACT_APP_DEMO}`}
+          <br />
+          {`demo two: ${process.env.REACT_APP_DEMO_TWO}`}
         </p>
         <a
           className="App-link"
